@@ -8,6 +8,7 @@ import Navber from './components/Shared/Navber';
 import Error from './components/Shared/Error';
 import AddBooks from './features/Books/AddBooks';
 import BooksView from './features/Books/BooksView';
+import Footer from './components/Shared/Footer';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
 
         <Route path='*' element={<Error />}></Route>
       </Routes>
+      <Footer />
 
     </div>
   );
