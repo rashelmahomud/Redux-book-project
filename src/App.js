@@ -10,6 +10,7 @@ import AddBooks from './features/Books/AddBooks';
 import BooksView from './features/Books/BooksView';
 import EditBooks from './features/Books/EditBooks';
 import Footer from './components/Shared/Footer';
+import ProductView from './features/services/ProductView';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
         <Route path='/Book' element={<BooksView />}></Route>
         <Route path='/edit' element={<EditBooks />}></Route>
         <Route path='/addBook' element={<AddBooks />}></Route>
+        <Route path='/productView' element={<ProductView />}></Route>
 
 
 

@@ -33,7 +33,7 @@ export const booksSlice = createSlice({
 
         deleteBooks: (state, action) => {
             const id = action.payload;
-            state.books = state.books.filter((book) => book.id === id)
+            state.books = state.books.filter((book) => book.id !== id)
         },
     }
 });

@@ -11,6 +11,7 @@ const EditBooks = () => {
     const [id, setId] = useState(location.state.id);
     const [title, setTitle] = useState(location.state.title);
     const [author, setAuthor] = useState(location.state.author);
+    
     const handelSubite = (e) => {
         e.preventDefault();
         dispatch(updateBooks({ id, title, author }));

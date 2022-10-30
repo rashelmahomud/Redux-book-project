@@ -14,7 +14,7 @@ const BooksView = () => {
 
     return (
         <div>
-            <h2 className='my-5'>List Of Books</h2>
+            <h2 className='my-5 text-4xl'>List Of Books</h2>
             <div>
                 <table className='mx-auto border border-collapse border'>
                     <thead className=''>
