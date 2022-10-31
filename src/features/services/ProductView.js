@@ -13,7 +13,6 @@ const ProductView = () => {
         dispatch(fetchProducts());
     }, [])
 
-
     return (
         <div>
             <h1 className='text-4xl my-10 font-bold'>BEST ALL PRODUCT</h1>
@@ -22,7 +21,7 @@ const ProductView = () => {
 
                 {isLoading && <p>Loading...</p>}
                 {error && <p>{error}</p>}
-                {product && product.map((p) => <Product p={p} key={p.id} />)}
+                {product && product.map((p) => <Product p={p} key={p._id} />)}
 
             </div>
 

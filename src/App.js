@@ -11,6 +11,7 @@ import BooksView from './features/Books/BooksView';
 import EditBooks from './features/Books/EditBooks';
 import Footer from './components/Shared/Footer';
 import ProductView from './features/services/ProductView';
+import ProductDetails from './features/services/ProductDetails';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route path='/edit' element={<EditBooks />}></Route>
         <Route path='/addBook' element={<AddBooks />}></Route>
         <Route path='/productView' element={<ProductView />}></Route>
+        <Route path='/productDetails/:id' element={<ProductDetails />}></Route>
 
 
 
